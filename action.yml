@@ -1,0 +1,10 @@
+name: 'Pet'
+description: 'Pet the gotchis'
+env:
+  PRIVATE_KEY: ${{ secrets.PrivateKey }}
+outputs:
+  tx:
+    description: 'transaction hash of the petting'
+runs:
+  using: 'node12'
+  main: 'index.js'

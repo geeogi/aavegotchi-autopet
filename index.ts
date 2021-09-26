@@ -1,4 +1,4 @@
-import core from "@actions/core";
+import * as core from "@actions/core";
 import { TransactionResponse } from "@ethersproject/abstract-provider";
 import { ethers } from "ethers";
 

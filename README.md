@@ -1,6 +1,6 @@
 # Aavegotchi Autopet
 
-This service will pet your [Aavegotchi](https://aavegotchi.com) daily. Get started:
+This service will pet your [Aavegotchi](https://aavegotchi.com) twice daily. Get started:
 
 - Send >1 MATIC donation to the [AutoPetAddress](https://polygonscan.com/address/0x183f37551d5986d5c2b324db351a21687c4dc307) (this should last 100 days at least)
 - Set the AutoPetAddress as a PetOperator for your gotchi (see below)

@@ -6,9 +6,6 @@ jobs:
   pet:
     env:
       PRIVATE_KEY: ${{ secrets.PrivateKey }}
-    outputs:
-      tx:
-        description: 'transaction hash of the petting'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2

@@ -1,11 +1,17 @@
-name: 'Pet'
-description: 'Pet the gotchis'
 on: workflow_dispatch
-env:
-  PRIVATE_KEY: ${{ secrets.PrivateKey }}
-outputs:
-  tx:
-    description: 'transaction hash of the petting'
-runs:
-  using: 'node12'
-  main: 'index.js'
+
+jobs:
+  pet_job:
+    runs-on: ubuntu-latest
+    name: A job to pet gotchis
+    steps:
+      name: 'Pet'
+      description: 'Pet the gotchis'
+      env:
+        PRIVATE_KEY: ${{ secrets.PrivateKey }}
+      outputs:
+        tx:
+          description: 'transaction hash of the petting'
+      runs:
+        using: 'node12'
+        main: 'index.js'

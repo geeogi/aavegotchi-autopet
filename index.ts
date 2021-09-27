@@ -11,7 +11,7 @@ import { ethers } from "ethers";
  *
  * 1) Send >1 MATIC donation to the AutoPetAddress
  * 2) Set AutoPetAddress as a PetOperator for your gotchi (see README)
- * 3) Make a commit to this this file (or raise an issue) with the following:
+ * 3) Make a commit to this file (or raise an issue) with the following:
  *    - Your gotchi ID
  *    - The donation TX
  */

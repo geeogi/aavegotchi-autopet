@@ -9,6 +9,7 @@ You must provide a private key for an address which is an approved PetOperator f
 ### Running via Github action
 
 - Fork the repo
+- Update the `TOKEN_IDS` variable in `index.js/ts` to include your gotchis
 - Set a new secret on the repo called `PrivateKey` which is the private key of the PetOperator with funds to cover gas costs
 
 ### Running locally

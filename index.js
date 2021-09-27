@@ -23,7 +23,6 @@ console.log("now petting: " + TOKEN_IDS.join(","));
  */
 var provider = new ethers_1.ethers.providers.JsonRpcProvider(RPC_ENDPOINT);
 provider.ready.then(function () {
-    console.log("provider is ready");
     var contract = new ethers_1.ethers.Contract(contractAddress, abi, provider);
     var wallet = new ethers_1.ethers.Wallet(PRIVATE_KEY, provider);
     var contractWithSigner = contract.connect(wallet);
@@ -42,10 +41,10 @@ provider.ready.then(function () {
             console.log("status: " + receipt.status);
         })["catch"](function (e) {
             console.error(e);
-            core.setFailed(e);
+            throw new Error(e);
         });
     })["catch"](function (e) {
         console.error(e);
-        core.setFailed(e);
+        throw new Error(e);
     });
 });

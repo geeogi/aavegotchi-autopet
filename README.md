@@ -1,16 +1,14 @@
-## Aavegotchi interaction
+## Aavegotchi Autopet
 
-This service will pet your [Aavegotchi](https://aavegotchi.com). Use it to increase your kinship level and pet your gotchi often.
-
-### Join
-
-This is a beta service and it might break. Follow the steps below to have your gotchi petted automatically by this autopetter.
+This service will pet your [Aavegotchi](https://aavegotchi.com) daily. Follow the steps below to have your gotchi petted automatically:
 
 AutoPetAddress: 0x183f37551d5986d5c2b324db351a21687c4dc307
 
 - Send >1 MATIC donation to the AutoPetAddress (this should last 100 days at least)
 - Set AutoPetAddress as a PetOperator for your gotchi (see below)
 - Make a commit to this index.ts (or raise an issue) with your gotchi id and the tx hash of your donation
+
+> This is a beta experiment and it might break. Limited to 10 gotchis for now.
 
 ### PetOperator
 
@@ -20,7 +18,7 @@ The PetOperator can't do anything else other than pet your gotchi. Take care whe
 
 ### Forking
 
-The easiest way to run this script yourself is by forking the repo and running the action on Github. You could also run this script from the terminal or run it on a schedule (e.g. AWS lambda).
+If you want to run this script yourself you could fork the repo and run the action on Github. You could also run this script from the terminal or run it on a schedule (e.g. AWS lambda).
 
 ### Running via Github action
 

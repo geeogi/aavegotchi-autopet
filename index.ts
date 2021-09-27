@@ -2,8 +2,25 @@ import * as core from "@actions/core";
 import { TransactionResponse } from "@ethersproject/abstract-provider";
 import { ethers } from "ethers";
 
+/*
+ * IGNORE THIS MESSAGE IF YOU'RE FORKING THIS REPO
+ *
+ * IF YOU'D LIKE TO HAVE YOUR GOTCHI PETTED BY THIS AUTOPETTER THEN:
+ *
+ * AutoPetAddress = 0x183f37551d5986d5c2b324db351a21687c4dc307
+ *
+ * 1) Send >1 MATIC donation to the AutoPetAddress
+ * 2) Set AutoPetAddress as a PetOperator for your gotchi (see README)
+ * 3) Make a commit to this this file (or raise an issue) with the following:
+ *    - Your gotchi ID
+ *    - The donation TX
+ */
+const TOKEN_IDS = [
+  7988, // 0x377f08b6339686f4d4f342e74e2aaf2f360aacb397b48e728b3c6366f9bc4326
+  // <YOUR_GOTCHI_TOKEN_ID_HERE>, // <YOUR_DONATION_TX>
+];
+
 const RPC_ENDPOINT = "https://polygon-rpc.com";
-const TOKEN_IDS = [7988];
 const PRIVATE_KEY = process.env.PRIVATE_KEY;
 
 /*

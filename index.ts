@@ -28,8 +28,6 @@ console.log(`now petting: ${TOKEN_IDS.join(",")}`);
 const provider = new ethers.providers.JsonRpcProvider(RPC_ENDPOINT);
 
 provider.ready.then(() => {
-  console.log("provider is ready");
-
   const contract = new ethers.Contract(contractAddress, abi, provider);
   const wallet = new ethers.Wallet(PRIVATE_KEY, provider);
   const contractWithSigner = contract.connect(wallet);
@@ -52,11 +50,11 @@ provider.ready.then(() => {
         })
         .catch((e: any) => {
           console.error(e);
-          core.setFailed(e);
+          throw new Error(e);
         });
     })
     .catch((e: any) => {
       console.error(e);
-      core.setFailed(e);
+      throw new Error(e);
     });
 });

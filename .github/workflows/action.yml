@@ -1,17 +1,18 @@
+name: Pet
+
 on: workflow_dispatch
 
 jobs:
-  pet_job:
+  pet:
+    env:
+      PRIVATE_KEY: ${{ secrets.PrivateKey }}
+    outputs:
+      tx:
+        description: 'transaction hash of the petting'
     runs-on: ubuntu-latest
-    name: A job to pet gotchis
     steps:
-      name: 'Pet'
-      description: 'Pet the gotchis'
-      env:
-        PRIVATE_KEY: ${{ secrets.PrivateKey }}
-      outputs:
-        tx:
-          description: 'transaction hash of the petting'
-      runs:
-        using: 'node12'
-        main: 'index.js'
+    - uses: actions/checkout@v2
+    - uses: actions/setup-node@v2
+      with:
+        node-version: '12'
+    - run: node index.js

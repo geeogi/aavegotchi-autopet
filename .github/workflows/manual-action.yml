@@ -1,9 +1,6 @@
 name: Pet
 
-on:
-  workflow_dispatch
-  schedule:
-    - cron:  '0 */6 * * *'
+on: workflow_dispatch
 
 jobs:
   pet:
@@ -17,3 +14,4 @@ jobs:
           node-version: '12'
       - run: yarn tsc index.ts
       - run: node index.js
+

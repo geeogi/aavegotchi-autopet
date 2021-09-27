@@ -1,4 +1,4 @@
-name: Pet
+name: Manual Pet
 
 on: workflow_dispatch
 

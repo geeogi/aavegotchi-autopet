@@ -8,7 +8,7 @@ This service will pet your [Aavegotchi](https://aavegotchi.com) twice daily. Get
 
 AutoPetAddress: 0x183f37551d5986d5c2b324db351a21687c4dc307
 
-> This is a beta experiment and it might break. Limited to 10 gotchis for now.
+> This is a beta service and it might break. Limited to 10 gotchis for now.
 
 ### PetOperator
 

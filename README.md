@@ -4,7 +4,7 @@ This service will pet your [Aavegotchi](https://aavegotchi.com) twice daily. Get
 
 - If you can, send 1 MATIC donation to the [AutoPetAddress](https://polygonscan.com/address/0x183f37551d5986d5c2b324db351a21687c4dc307) (this should last 100 days at least)
 - Set the AutoPetAddress as a PetOperator for your gotchi (see below)
-- Make a commit to index.ts (or raise an issue) with your gotchi id and the tx hash of your donation
+- Make a commit to index.ts (or raise an issue) with your gotchi id
 
 AutoPetAddress: 0x183f37551d5986d5c2b324db351a21687c4dc307
 

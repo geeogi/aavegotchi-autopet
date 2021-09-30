@@ -4,7 +4,7 @@ import { ethers } from "ethers";
 
 const TOKEN_IDS = [
   7988,
-  // <YOUR_GOTCHI_TOKEN_ID_HERE>, // <YOUR_DONATION_TX>
+  // <YOUR_GOTCHI_TOKEN_ID_HERE>
 ];
 
 const RPC_ENDPOINT = "https://polygon-rpc.com";

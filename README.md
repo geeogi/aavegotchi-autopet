@@ -8,8 +8,6 @@ This service will pet your [Aavegotchi](https://aavegotchi.com) twice daily. Get
 
 AutoPetAddress: 0x183f37551d5986d5c2b324db351a21687c4dc307
 
-> This is a beta service and it might break. Limited to 10 gotchis for now.
-
 ### PetOperator
 
 You must approve the autopet as a PetOperator for your gotchi. You can approve a new PetOperator for your gotchi via the [AavegotchiFacet](https://louper.dev/?address=0x86935F11C86623deC8a25696E1C19a8659CbF95d&network=polygon) (you'll need to call `setPetOperatorForAll` directly on the diamond contract `0x86935f11c86623dec8a25696e1c19a8659cbf95d` which can be done via [louper.dev](https://louper.dev/?address=0x86935F11C86623deC8a25696E1C19a8659CbF95d&network=polygon)).
